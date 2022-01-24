@@ -92,7 +92,11 @@ func Test_Helm_FluentBit_Containerd_Multiline_Logs(t *testing.T) {
 		Feature()
 
 	featMultilineLogs := features.New("multiline logs").
-		Setup(stepfuncs.KubectlApplyFOpt(internal.MultilineLogsPodYamlPath, internal.MultilineLogsNamespace)).
+		//Setup(stepfuncs.KubectlApplyFOpt(internal.MultilineLogsPodYamlPath, internal.MultilineLogsNamespace)).
+		Setup(stepfuncs.GenerateMultilineLogsWithDeployment(
+			internal.MultilineLogsPodName,
+			internal.MultilineLogsNamespace,
+		)).
 		Assess("multiline logs present", stepfuncs.WaitUntilExpectedLogsPresent(
 			multilineLogCount,
 			map[string]string{
