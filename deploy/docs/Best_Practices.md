@@ -795,7 +795,7 @@ For [batch processor][batch_processor]:
 - `timeout` defines time after which the batch is sent regardless of the size (can be lower than `send_batch_size`).
 - `send_batch_max_size` is an upper limit of the batch size.
 
-_We could say that `send_batch_size` is soft limit and `send_batch_max_size` is hard limit of the batch size._
+_We could say that `send_batch_size` is a soft limit and `send_batch_max_size` is a hard limit of the batch size._
 
 For [sumologic exporter][sumologic_exporter]:
 
