@@ -821,7 +821,7 @@ but after some time only small piece of the file will be used for data storage (
 
 ### Examples
 
-Here is some useful examples and calculations for queue and batch parameters.
+Here are some useful examples and calculations for queue and batch parameters.
 
 For the calculations below we made an assumption that a single metric data point is around 1 kilobyte in size, including metadata.
 This assumption is based on the average data we ingest.
