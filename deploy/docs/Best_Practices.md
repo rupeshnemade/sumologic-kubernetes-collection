@@ -787,7 +787,7 @@ metadata:
 
 ## OpenTelemetry queueing and batching
 
-OpenTelemetry goes with several parameters related to queue management.
+OpenTelemetry comes with several parameters related to queue management.
 
 For [batch processor][batch_processor]:
 
