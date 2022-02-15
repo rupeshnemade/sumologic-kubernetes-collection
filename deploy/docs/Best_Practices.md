@@ -814,7 +814,7 @@ For [sumologic exporter][sumologic_exporter]:
 
 ### Compaction
 
-The OpenTelemetry Collector doesn't have compaction mechanism.
+The OpenTelemetry Collector doesn't have a compaction mechanism.
 It reuses persistent storage space which but is unable to free it to filesystem.
 This leads to situation when database file can grow a lot (due to a spike in data traffic)
 but after some time only small piece of the file will be used for data storage (until next spike).
