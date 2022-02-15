@@ -809,8 +809,8 @@ For [sumologic exporter][sumologic_exporter]:
 **there is no way to figure out optimal PVC size in relation to `sending_queue.queue_size`.**
 **Due to that, we recommend to set `sending_queue.queue_size` to high value in order to use maximum resources of PVC.**
 
-[batch_processor]: https://github.com/open-telemetry/opentelemetry-collector/tree/v0.36.0/processor/batchprocessor#batch-processor
-[sumologic_exporter]: https://github.com/SumoLogic/sumologic-otel-collector/tree/v0.0.35-beta.0/pkg/exporter/sumologicexporter#sumo-logic-exporter
+[batch_processor]: https://github.com/open-telemetry/opentelemetry-collector/tree/v0.44.0/processor/batchprocessor#batch-processor
+[sumologic_exporter]: https://github.com/SumoLogic/sumologic-otel-collector/tree/v0.0.50-beta.0/pkg/exporter/sumologicexporter#sumo-logic-exporter
 
 ### Compaction
 
