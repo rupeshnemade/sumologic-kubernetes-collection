@@ -792,7 +792,7 @@ OpenTelemetry comes with several parameters related to queue management.
 For [batch processor][batch_processor]:
 
 - `send_batch_size` defines the number of items (logs, metrics, traces) in one batch before it's sent further down the pipeline.
-- `timeout` defines time after which the batch is send regardless of the size (can be lower than `send_batch_size`).
+- `timeout` defines time after which the batch is sent regardless of the size (can be lower than `send_batch_size`).
 - `send_batch_max_size` is an upper limit of the batch size.
 
 _We could say that `send_batch_size` is soft limit and `send_batch_max_size` is hard limit of the batch size._
